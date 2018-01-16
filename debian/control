@@ -1,0 +1,27 @@
+Source: libfile-copy-recursive-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>,
+           Ansgar Burchardt <ansgar@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 10)
+Build-Depends-Indep: libpath-tiny-perl,
+                     libtest-deep-perl,
+                     libtest-exception-perl,
+                     libtest-file-perl,
+                     libtest-warn-perl,
+                     perl
+Standards-Version: 4.1.3
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libfile-copy-recursive-perl.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-perl/packages/libfile-copy-recursive-perl.git
+Homepage: https://metacpan.org/release/File-Copy-Recursive
+
+Package: libfile-copy-recursive-perl
+Architecture: all
+Depends: ${perl:Depends},
+         ${misc:Depends}
+Description: Perl extension for recursively copying files and directories
+ File::Copy::Recursive module copies and moves directories recursively
+ (or single files, well... singley) to an optional depth and attempts
+ to preserve each file or directory's mode.
